@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Venu from "./views/Venu";
 import ScheduleCourse from "./views/ScheduleCourse"
-
+import ArPage from "./views/ArPage"
 Vue.use(Router)
 
 export default new Router({
@@ -32,6 +32,11 @@ export default new Router({
       path: '/venu',
       name: 'venu',
       component: Venu
+    },
+    {
+      path: '/ar-page',
+      name: 'ar-page',
+      component: ArPage
     }
   ]
 })
