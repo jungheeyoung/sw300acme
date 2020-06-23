@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import Venu from "./views/Venu";
 import ScheduleCourse from "./views/ScheduleCourse"
 import ArPage from "./views/ArPage"
+import GoogleMap from "./views/mapPage"
+
 Vue.use(Router)
 
 export default new Router({
@@ -37,6 +39,11 @@ export default new Router({
       path: '/ar-page',
       name: 'ar-page',
       component: ArPage
+    },
+    {
+      path: '/map',
+      name: 'google-map',
+      component: GoogleMap
     }
   ]
 })

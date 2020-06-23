@@ -50,7 +50,8 @@
         {title: 'Schedule Class', icon: 'home', to: '/schedule-course'},
         {title: 'Venu', icon: 'location_on', to:'/venu'},
         {title: 'About', icon: 'question_answer', to: '/about'},
-        {title: 'ArPage', icon: 'question_answer', to: '/ar-page'}
+        {title: 'ArPage', icon: 'question_answer', to: '/ar-page'},
+        {title: 'Map', icon: 'question_answer', to: '/map'}
       ]
     }),
     props: {

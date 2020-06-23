@@ -25,8 +25,10 @@
     "vue-cli-plugin-axios": "^0.0.4",
     "vue-cli-plugin-vuetify": "^0.4.6",
     "vue-moment": "^4.0.0",
+    "vue-naver-maps": "^0.12.1",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.21",
+    "vue2-google-maps": "^0.10.7",
     "vuetify": "^1.4.1",
     "vuetify-loader": "^1.0.5"
   },
