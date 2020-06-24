@@ -1,7 +1,7 @@
 INSERT INTO `user` (`id`, `name`)
 VALUES
-(1, '이성희'),
-(2, '임태진'),
+(1, 'tset'),
+(2, '임adfadf태진'),
 (3, '윤남권'),
 (4, '이상동');
 
@@ -15,7 +15,7 @@ VALUES
 
 INSERT INTO `venu` (`id`, `address`, `capacity`, `map`, `name`)
 VALUES
-(1, '경기도 성남시 분당구 삼평동 대왕판교로 670길 유스페이스 B동 8층', 25, 'https://goo.gl/maps/R61hudwMy2P2', '판교 강의실1'),
+(1, '경기도 성남시 분당구 삼평동 대왕판교로 670길 유스페이스 B동 8층', 25, 'https://goo.gl/maps/R61hudwMy2P2', '판교 sdfsdf'),
 (2, '경기도 성남시 분당구 삼평동 대왕판교로 670길 유스페이스 B동 8층', 25, 'https://goo.gl/maps/R61hudwMy2P2', '판교 강의실2'),
 (3, '경기도 성남시 분당구 삼평동 대왕판교로 670길 유스페이스 B동 8층', 25, 'https://goo.gl/maps/R61hudwMy2P2', '판교 강의실3'),
 (4, '경기도 성남시 분당구 삼평동 대왕판교로 670길 유스페이스 B동 8층', 20, 'https://goo.gl/maps/R61hudwMy2P2', '판교 강의실4'),
