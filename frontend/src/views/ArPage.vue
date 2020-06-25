@@ -5,6 +5,7 @@
                 height="500"
                 width="600"
                 frameborder="0"
+                allow="geolocation *;"
         ></iframe>
         <!--<iframe src="<%= BASE_URL %>ar.html">
         </iframe>../../public/ar.html-->

@@ -19,7 +19,25 @@
           </v-card-text>
         </v-card>
       </v-expansion-panel-content>
-      <span v-if="response.length <= 0">
+      <v-expansion-panel-content v-for="(item, idx) in tempArray" :key="idx" class="grey lighten-4">
+        <div slot="header">
+          <h3>{{ item.areaName }}</h3>
+        </div>
+        <v-card>
+          <v-card-text>
+            지역명 : {{ item.areaName }}
+            <br>
+            지역 소개 : {{ item.areaInfo }}
+            <br>
+            ASA 서비스 설치 현황 : {{ item.areaCount }}개의 장소에서 운영 중
+            <br>
+            지역 별칭 : {{ item.ormid }}
+            <br>
+            <v-btn color="primary" @click="selectArea(idx)">Select</v-btn>
+          </v-card-text>
+        </v-card>
+      </v-expansion-panel-content>
+      <span v-if="response.length < 0">
         <h3>해당 지역에는 ASA 서비스가 존재하지 않습니다.</h3>
       </span>
     </v-expansion-panel>
@@ -36,7 +54,15 @@ export default {
   data() {
     return {
       response: [],
-      errors: []
+      errors: [],
+      tempArray: [
+        {
+          areaName: "서울",
+          areaInfo: "서울",
+          ormid: "2910",
+          areaCount: "서울",
+        }
+      ]
     };
   },
   methods: {
