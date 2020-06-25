@@ -42,7 +42,7 @@
         mb-5
       >
         <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-
+sdfsdfsdf
         <v-layout justify-center>
           <a
             v-for="(link, i) in importantLinks"
