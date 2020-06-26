@@ -87,10 +87,10 @@ public class Area implements Serializable {
 	public List<StructureMap> getStructureMap() {
 		return structureMap;
 	}
-	
-	
-	public String toString() {
-		return String.valueOf(getAreaID());
-	}
-	
+
+
+	//public String toString() {
+	//	return String.valueOf(getAreaID());
+	//}
+
 }

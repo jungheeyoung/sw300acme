@@ -30,8 +30,8 @@ public class StructureMark implements Serializable {
 	
 	@Column(name="MarkerPath", nullable=true, length=255)	
 	private String markerPath;
-	
-	private void setMarkerId(long value) {
+
+	public void setMarkerId(long value) {
 		this.markerId = value;
 	}
 	
@@ -51,8 +51,8 @@ public class StructureMark implements Serializable {
 		return markerPath;
 	}
 	
-	public String toString() {
-		return String.valueOf(getMarkerId());
-	}
+	//public String toString() {
+	//	return String.valueOf(getMarkerId());
+	//}
 	
 }

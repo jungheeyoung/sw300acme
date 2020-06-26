@@ -38,8 +38,8 @@ public class StructureMap implements Serializable {
 	
 	@Column(name="Lng", nullable=false, length=10)	
 	private double lng;
-	
-	private void setStructureId(long value) {
+
+	public void setStructureId(long value) {
 		this.structureId = value;
 	}
 	
@@ -75,8 +75,8 @@ public class StructureMap implements Serializable {
 		return area;
 	}
 	
-	public String toString() {
-		return String.valueOf(getStructureId());
-	}
+	//public String toString() {
+		//return String.valueOf(getStructureId());
+	//}
 	
 }
