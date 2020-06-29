@@ -5,16 +5,15 @@
       text-xs-center
       wrap
     >
-
-
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to SW300 contents
+            안녕하세요, ASA입니다.
         </h1>
         <p class="subheading font-weight-regular">
-          For1 help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank">Discord Community</a>
+          ASA란?
+          <br>Ar Structure Assistant 의 약자로 건축 현장의 마크를 인식하여 해당 건물의 완공된 상태를 3D모델로 전시합니다.
+          <br>
+          네비웍스 sw 300 신입사원 교육 과정의 캡스톤 프로젝트 결과물입니다.
         </p>
       </v-flex>
 
@@ -22,18 +21,9 @@
         mb-5
         xs12
       >
-        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-
+        <h2 class="headline font-weight-bold mb-3">HOME 메뉴</h2>
         <v-layout justify-center>
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
+          메인 화면으로 ASA 서비스를 방문했을 시 전시되는 첫 번째 페이지입니다.
         </v-layout>
       </v-flex>
 
@@ -41,18 +31,9 @@
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-sdfsdfsdf
+        <h2 class="headline font-weight-bold mb-3">ArPage</h2>
         <v-layout justify-center>
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
+          ASA 서비스의 주력 콘텐츠로 건축 현장의 마크를 인식하여 해당 건물의 완공된 상태를 3D모델로 전시합니다.
         </v-layout>
       </v-flex>
 
@@ -60,18 +41,9 @@ sdfsdfsdf
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
-
+        <h2 class="headline font-weight-bold mb-3">Map</h2>
         <v-layout justify-center>
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
+          ASA 서비스가 설치된 지역을 지도 상에 포인트로 표기합니다. 또한, 해당 지역에 상세 정보를 전시합니다.
         </v-layout>
       </v-flex>
     </v-layout>
@@ -130,7 +102,6 @@ sdfsdfsdf
           text: 'Frequently Asked Questions',
           href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions'
         }
-
       ]
     })
   }

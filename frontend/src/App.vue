@@ -1,9 +1,9 @@
 <template>
-  <v-app id="sw300">
-    <v-toolbar app clipped-left>
+  <v-app id="sw300" dark>
+    <v-toolbar app clipped-left dark>
       <v-toolbar-side-icon @click.stop="drawerRight = !drawerRight"></v-toolbar-side-icon>
       <v-img
-              :src="require('./assets/kosta2.png')"
+              :src="require('./assets/ASA LOGO.png')"
               contain
               height="50"
       ></v-img>
@@ -15,7 +15,7 @@
             left
             clipped
             app
-
+            dark
     >
       <v-list dense>
         <v-list-tile
@@ -47,8 +47,8 @@
       drawerRight: null,
       items: [
         {title: 'Home', icon: 'home', to: '/'},
-        {title: 'ArPage', icon: 'question_answer', to: '/ar-page'},
-        {title: 'Map', icon: 'question_answer', to: '/map'}
+        {title: 'ArPage', icon: 'camera', to: '/ar-page'},
+        {title: 'Map', icon: 'map', to: '/map'}
       ]
     }),
     props: {

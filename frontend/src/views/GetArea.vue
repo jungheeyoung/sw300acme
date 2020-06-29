@@ -3,7 +3,7 @@
     <v-expansion-panel>
       <v-expansion-panel-content v-if="response!=null" v-for="(item, idx) in response" :key="idx" class="grey lighten-4">
         <div slot="header">
-          <h3>{{ item.areaName }}</h3>
+          <h3 v-bind:style="[ baseStyle ]">{{ item.areaName }}</h3>
         </div>
         <v-card>
           <v-card-text>
@@ -15,13 +15,12 @@
             <br>
             지역 별칭 : {{ item.ormid }}
             <br>
-            <v-btn color="primary" @click="selectArea(idx)">Select</v-btn>
           </v-card-text>
         </v-card>
       </v-expansion-panel-content>
       <v-expansion-panel-content v-for="(item, idx) in tempArray" :key="idx" class="grey lighten-4">
         <div slot="header">
-          <h3>{{ item.areaName }}</h3>
+          <h3 v-bind:style="baseStyle">{{ item.areaName }}</h3>
         </div>
         <v-card>
           <v-card-text>
@@ -33,7 +32,6 @@
             <br>
             지역 별칭 : {{ item.ormid }}
             <br>
-            <v-btn color="primary" @click="selectArea(idx)">Select</v-btn>
           </v-card-text>
         </v-card>
       </v-expansion-panel-content>
@@ -55,6 +53,9 @@ export default {
     return {
       response: [],
       errors: [],
+      baseStyle: {
+        color: 'black'
+      },
       tempArray: [
         {
           areaName: "동작구",
@@ -73,6 +74,18 @@ export default {
           areaInfo: "포천시는 대한민국 경기도의 동북부에 위치하고 있는 시이다. ",
           ormid: "123",
           areaCount: "28",
+        },
+        {
+          areaName: "안양시",
+          areaInfo: "안양시는 대한민국 경기도 중부에 있는 시다. 동쪽으로 과천시, 남쪽으로 군포시와 의왕시를 접한다.",
+          ormid: "2913",
+          areaCount: "20",
+        },
+        {
+          areaName: "여수시",
+          areaInfo: "여수시는 대한민국 전라남도 동남부 여수반도에 있는 시이다. 면적은 510.08km²이고, 해안선 길이는 879.03km이다.",
+          ormid: "2919",
+          areaCount: "20",
         }
       ]
     };

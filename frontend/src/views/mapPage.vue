@@ -58,7 +58,6 @@
                 step: 1,
                 selectedCourse: null,
                 selectedClass: null,
-
                 errors: []
             };
         },
